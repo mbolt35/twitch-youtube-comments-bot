@@ -3,30 +3,30 @@ Twitch bot implementation which will post YouTube comments from configured video
 
 ---- 
 
-# Setup
+### Setup
 To run this bot either locally or on a remote host, you'll need to acquire:
 
-## YouTube API Key
+#### YouTube API Key
 You can get an API key by going to the [Google Developer Console](https://console.developers.google.com/apis/dashboard), creating a new API project, and then using the Credentials tab to generate a new API key for the project. 
 
-## Twitch Bot User and OAuth Token
+#### Twitch Bot User and OAuth Token
 Create a new (or use an existing) Twitch user, login, and then navigate to: [https://twitchapps.com/tmi/](https://twitchapps.com/tmi) which can retrieve an oauth token for you.
 
-## YouTube Video IDs
+#### YouTube Video IDs
 To find the id for a specific YouTube video, go to the URL on YouTube. You should see a `v` query parameter `?v=[video_id]`. 
 
 ---- 
 
-# Configuration
+### Configuration
 Summary on configuring and running the bot.
 
-## Production
+#### Production
 In the `./config/env/` directory, there is a single `production.js` configuration which uses environment variables to import the configuration values. This is optimal for running as a part of a webserver or remote host where environment variables can easily be configured by the host service. 
 
-## Local
+#### Local
 Probably the more common scenario for running this bot will be locally. The fastest way to set this up is to copy `./config/env/production.js` and paste it as `./config/env/local.js`. Whenever the `local.js` file exists, it will automatically be used instead of `production.js`. After creating `local.js`, replace the `process.env` values for each configuration with your own. 
 
-## Example
+#### Example
 ```
 module.exports = {
 
