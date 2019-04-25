@@ -76,3 +76,12 @@ module.exports = {
     }
 };
 ```
+
+----
+
+### Run
+```
+$ cd twitch-youtube-comments-bot
+$ npm install
+$ node bot.js
+```
