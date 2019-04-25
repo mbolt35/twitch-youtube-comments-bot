@@ -10,7 +10,7 @@ To run this bot either locally or on a remote host, you'll need to acquire:
 You can get an API key by going to the [Google Developer Console](https://console.developers.google.com/apis/dashboard), creating a new API project, and then using the Credentials tab to generate a new API key for the project. 
 
 #### Twitch Bot User and OAuth Token
-Create a new (or use an existing) Twitch user, login, and then navigate to: [https://twitchapps.com/tmi/](https://twitchapps.com/tmi) which can retrieve an oauth token for you.
+Create a new (or use an existing) Twitch user, login, and then navigate to: [https://twitchapps.com/tmi/](https://twitchapps.com/tmi) which can retrieve an oauth token for the twitch user.
 
 #### YouTube Video IDs
 To find the id for a specific YouTube video, go to the URL on YouTube. You should see a `v` query parameter `?v=[video_id]`. 
